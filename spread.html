@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+const myName = {
+  name: 'pragati',
+  lastName: 'shukla',
+  city: 'satna ',
+  age: 22,
+ 
+}
+
+const updateMyName = {
+  name: 'jaya',
+  lastName: 'shukla', 
+  city: 'bhopal',
+  age: 21,
+}
+
+const myUpdatedName = {...myName, ...updateMyName, newName: 'abcd'} // spread method
+
+const copyName = Object.assign({},myName, updateMyName ); // assign method 
+
+
+console.log(myUpdatedName, copyName);
+
+</script>
