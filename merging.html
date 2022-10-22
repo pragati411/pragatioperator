@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+const objNum1 = { a: 1, b: 2, c: 3 };
+const objNum2 = { d: 4, e: 5, f: 6 };
+const objNum3 = {...objNum1, ...objNum2}; 
+console.log(objNum3);
+
+let newObje = { name: 'pragati shukla', age: 22 };
+const changesName = { name: 'jaya' };
+newName = { ...newObje, ...changesName };
+console.log(newName) 
+
+const obj = {  a : 1,
+        b : 2,
+        c : {
+          ca : 1,
+          cb : 2,
+          cc : {
+            cca : 100,
+            ccb : 200 } } };
+
+const obj2 = {  a : 10,
+        c : {
+          ca : 10,
+          cb : 20, 
+          cc : {
+            cca : 101,
+            ccb : 202 } } };
+
+            const merge = { ...obj, ...obj2, name: "pragati", city: "satna"};
+            let newObj = {a: 200, b: 400, ccb: 100,};
+             console.log(merge, newObj);
+
+
+             let person ={
+    firstName: 'pragati',
+    lastName: 'shukla',
+    age: 22,
+    
+};
+
+
+let studentProfile = {
+    class: 12,
+    location: 'India'
+};
+
+let result = {
+    ...person,
+    ...studentProfile,
+};
+
+console.log(result);
+
+
+</script>
